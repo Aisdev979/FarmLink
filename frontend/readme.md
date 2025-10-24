@@ -1,5 +1,3 @@
----
-
 ## 🏗️ Section-Based Tasks
 
 ### 1. Navbar & Footer
