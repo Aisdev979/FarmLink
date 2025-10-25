@@ -1,0 +1,34 @@
+:root {
+    --orange-accent: #FFCB3D;
+    --text-green: #007A44;
+    --white: #FFFFFF;
+    --text-grey: #494949;
+    --lighter-grey: #979797;
+    --black: #000000;
+
+
+
+    /* 
+     - Why choose farmlink
+     - About farmlink nigeria
+    */
+    
+    --light-orange: #FFF7ED;
+    --light-blue: #EFF6FF;
+    --light-green: #DCFCE7;
+
+    /*
+     - Why choose farmlink - progress bar, icon and rate numbers
+     - Marketplace - price
+     - About farmlink nigeria - icon, founded, members, support
+    */
+
+    --dark-orange: #F97316;
+    --dark-blue: #3B82F6;
+    --dark-green: #22C55E;
+
+    /*Get started btn, login btn, all categories*/
+
+
+    
+}
