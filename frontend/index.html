@@ -4,59 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connecting Nigerian Farmers and Buyers Directly | FarmLink</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>FarmLink</h1>
-        <p>Connecting Nigerian Farmers and Buyers Directly</p>
-    </header>
-
-    <main>
-        <section aria-labelledby="marketplace">
-            <h2 id="marketplace">Featured Marketplace</h2>
-            <p>Discover fresh produce from verified Nigerian farmers</p>
-
-            <div>
-                <select name="product-categories" id="categories">
-                    <option value="All Categories">All Categories</option>
-                    <option value="Grain">Grain</option>
-                    <option value="Vegetable">Vegetable</option>
-                    <option value="Fruits">Fruits</option>
-                    <option value="Livestock">Livestock</option>
-                </select>
-
-                <button>View all in Marketplace</button>
-            </div>
-        </section>
-
-        <section aria-labelledby="product-details">
-            <div id="product-details">
-                <img src="./assets/hero-image.png" alt="A variety of fresh produce" />
-                
-                <div>
-                    <img src="./assets/farmlink-logo.png" alt="FarmLink logo" />
-                    <div>
-                        <p>Fatdan Farms</p>
-                        <span><img src="./assets/location.png" alt="Location icon"> Ibadan</span>
-                    </div>
+    <main class="main">
+        <section class="marketplace">
+            <!-- Marketplace Section -->
+            <section class="marketplace__container" aria-labelledby="marketplace">
+                <div class="heading">
+                    <h2 id="marketplace" class="heading__title">Featured Marketplace</h2>
+                    <p class="heading__description">Discover fresh produce from verified Nigerian farmers</p>
                 </div>
 
-                <h3>Fresh Yam</h3>
-                <p>Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.</p>
+                <div class="marketplace__controls">
+                    <select name="product-categories" id="categories" class="marketplace__select">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Grain">Grain</option>
+                        <option value="Vegetable">Vegetable</option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Livestock">Livestock</option>
+                    </select>
 
-                <div>
-                    <p><strong>#800</strong><span>/tuber</span></p>
-                    <div>
-                        <div>
-                            <img src="./assets/house.png" alt="House icon" />
-                            <p>900+</p>
+                    <button class="marketplace__button">View all in Marketplace</button>
+                </div>
+            </section>
+
+            <!-- Product Details Section -->
+            <section class="product" aria-labelledby="product-details">
+                <div id="product-details" class="product__card">
+
+                    <img src="./assets/hero-image.png" alt="A variety of fresh produce" class="product__image" />
+
+                    <div class="details">
+                        <div class="product__farmer">
+                            <img src="./assets/hero-image.png" alt="FarmLink logo" class="product__farmer-logo" />
+                            <div class="product__farmer-info">
+                                <p class="product__farmer-name">Fatdan Farms</p>
+                                <span class="product__farmer-location">
+                                    <img src="./assets/location.png" alt="Location icon" class="product__location-icon">
+                                    Ibadan
+                                </span>
+                            </div>
                         </div>
-                        <span>Available</span>
+
+                        <h3 class="product__name">Fresh Yam</h3>
+                        <p class="product__description">
+                            Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.
+                        </p>
+
+                        <div class="product__pricing">
+                            <p class="product__price">
+                                <strong class="product__price-value">#800</strong>
+                                <span class="product__price-unit">/tuber</span>
+                            </p>
+
+                            <div class="product__availability">
+                                <div class="product__availability-count">
+                                    <img src="./assets/house.png" alt="House icon" class="product__availability-icon" />
+                                    <p class="product__availability-number">900+</p>
+                                </div>
+                                <span class="product__availability-label">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <button>Call</button>
+                            <button>Whatsapp</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div id="product-details" class="product__card">
+
+                    <img src="./assets/hero-image.png" alt="A variety of fresh produce" class="product__image" />
+
+                    <div class="details">
+                        <div class="product__farmer">
+                            <img src="./assets/hero-image.png" alt="FarmLink logo" class="product__farmer-logo" />
+                            <div class="product__farmer-info">
+                                <p class="product__farmer-name">Fatdan Farms</p>
+                                <span class="product__farmer-location">
+                                    <img src="./assets/location.png" alt="Location icon" class="product__location-icon">
+                                    Ibadan
+                                </span>
+                            </div>
+                        </div>
+
+                        <h3 class="product__name">Fresh Yam</h3>
+                        <p class="product__description">
+                            Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.
+                        </p>
+
+                        <div class="product__pricing">
+                            <p class="product__price">
+                                <strong class="product__price-value">#800</strong>
+                                <span class="product__price-unit">/tuber</span>
+                            </p>
+
+                            <div class="product__availability">
+                                <div class="product__availability-count">
+                                    <img src="./assets/house.png" alt="House icon" class="product__availability-icon" />
+                                    <p class="product__availability-number">900+</p>
+                                </div>
+                                <span class="product__availability-label">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <button>Call</button>
+                            <button>Whatsapp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-details" class="product__card">
+
+                    <img src="./assets/hero-image.png" alt="A variety of fresh produce" class="product__image" />
+
+                    <div class="details">
+                        <div class="product__farmer">
+                            <img src="./assets/hero-image.png" alt="FarmLink logo" class="product__farmer-logo" />
+                            <div class="product__farmer-info">
+                                <p class="product__farmer-name">Fatdan Farms</p>
+                                <span class="product__farmer-location">
+                                    <img src="./assets/location.png" alt="Location icon" class="product__location-icon">
+                                    Ibadan
+                                </span>
+                            </div>
+                        </div>
+
+                        <h3 class="product__name">Fresh Yam</h3>
+                        <p class="product__description">
+                            Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.
+                        </p>
+
+                        <div class="product__pricing">
+                            <p class="product__price">
+                                <strong class="product__price-value">#800</strong>
+                                <span class="product__price-unit">/tuber</span>
+                            </p>
+
+                            <div class="product__availability">
+                                <div class="product__availability-count">
+                                    <img src="./assets/house.png" alt="House icon" class="product__availability-icon" />
+                                    <p class="product__availability-number">900+</p>
+                                </div>
+                                <span class="product__availability-label">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <button>Call</button>
+                            <button>Whatsapp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-details" class="product__card">
+
+                    <img src="./assets/hero-image.png" alt="A variety of fresh produce" class="product__image" />
+
+                    <div class="details">
+                        <div class="product__farmer">
+                            <img src="./assets/hero-image.png" alt="FarmLink logo" class="product__farmer-logo" />
+                            <div class="product__farmer-info">
+                                <p class="product__farmer-name">Fatdan Farms</p>
+                                <span class="product__farmer-location">
+                                    <img src="./assets/location.png" alt="Location icon" class="product__location-icon">
+                                    Ibadan
+                                </span>
+                            </div>
+                        </div>
+
+                        <h3 class="product__name">Fresh Yam</h3>
+                        <p class="product__description">
+                            Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.
+                        </p>
+
+                        <div class="product__pricing">
+                            <p class="product__price">
+                                <strong class="product__price-value">#800</strong>
+                                <span class="product__price-unit">/tuber</span>
+                            </p>
+
+                            <div class="product__availability">
+                                <div class="product__availability-count">
+                                    <img src="./assets/house.png" alt="House icon" class="product__availability-icon" />
+                                    <p class="product__availability-number">900+</p>
+                                </div>
+                                <span class="product__availability-label">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <button>Call</button>
+                            <button>Whatsapp</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
 </body>
 </html>
+
