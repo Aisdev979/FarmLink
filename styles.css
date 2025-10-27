@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  width: 100%;
+}
+.reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reasons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  padding-top: 4rem;
+}
+.reasons__heading {
+  font-size: 3.125rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.reasons__paragraph {
+  font-family: "Inter" 18pt;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #979797;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+/* @media (min) */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 12px;
+  translate: 0.3s;
+}
+.card:hover {
+  box-shadow: 2px 6px 1px -3px rgb(0 0 0 / 0.1),
+    -2px 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-4px);
+}
+.card__1 {
+  background-color: #dcfce7;
+}
+.card__2 {
+  background-color: #eff6ff;
+}
+.card__3 {
+  background-color: #fff7ed;
+}
+svg {
+  height: 30px;
+  width: 30px;
+}
+.card__title {
+  font-family: "Inter" 18pt;
+  text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.card__text {
+  font-family: "Inter" 18pt;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #585858;
+}
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 4rem;
+  top: 1605px;
+  left: 131px;
+  opacity: 1;
+  border-radius: 12px;
+  background-color: #ffffff;
+  width: 90%;
+  padding: 0.5rem;
+}
+.progress__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.progress__label {
+  font-family: "Inter" 18pt;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #585858;
+}
+.progress__value__1 {
+  font-family: "Inter" 18pt;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #22c55e;
+}
+.progress__value__2 {
+  font-family: "Inter" 18pt;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #3b82f6;
+}
+.progress__value__3 {
+  font-family: "Inter" 18pt;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #f97316;
+}
+.progress__bar {
+  width: 100%;
+  height: 0.5rem;
+  top: 1645px;
+  left: 149px;
+  opacity: 1;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+}
+.progress__indicator {
+  height: 0.5rem;
+  top: 1645px;
+  left: 149px;
+  opacity: 1;
+  border-radius: 25px;
+}
+.progress__indicator__1 {
+  width: 98.5%;
+  background-color: #22c55e;
+}
+.progress__indicator__2 {
+  width: 70%;
+  background-color: #3b82f6;
+}
+.progress__indicator__3 {
+  width: 90.5%;
+  background-color: #f97316;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .card__container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 21.1875rem;
+    height: 24.31875rem;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .card__container {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .card {
+    width: 19.125rem;
+    height: 17.3125rem;
+    padding: 1rem;
+  }
+  .card__text {
+    font-size: 1rem;
+  }
+}
