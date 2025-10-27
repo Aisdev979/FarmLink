@@ -103,27 +103,27 @@ body {
 
 .product {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(clamp(150px, 30vw, 400px), 1fr));
-    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1em;
 }
 
 .product__card {
     width: 380px;
     box-shadow: 1px 1px 3px var(--text-grey);
     margin-bottom: 2em;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
 .product__image {
     width: 100%;
-    height: clamp(200px, 20vw, 400px);
+    aspect-ratio: 1;
     object-fit: cover;
-    
+    border-radius: 10px 10px 0 0;
 }
 
 .details {
-    padding: 2em 2.8em;
+    padding: 2.5em;
 }
 
 .product__farmer {
@@ -153,13 +153,13 @@ body {
 }
 
 .product__description {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .product__pricing {
     display: flex;
     align-items: center;
-    gap: 8em;
+    gap: 10em;
     margin-top: 1.6em;
 }
 
@@ -173,6 +173,11 @@ body {
     font-weight: 800;
 }
 
+.product__price-unit,
+.product__availability {
+    font-size: 1.6rem;
+}
+
 .product__availability-count {
     display: flex;
     align-items: center;
@@ -180,12 +185,22 @@ body {
 }
 
 .contact button {
+    cursor: pointer;
     display: inline-block;
     background-color: #2A722E;
     color: var(--white);
     border: none;
-    padding: 1.15rem 3.5rem;
+    padding: 1.5rem 3.5rem;
     margin-right: 1em;
-    margin-block: 4.3rem;
+    margin-top: 4.3rem;
+    margin-bottom: 1em;
     border-radius: 10px;
+}
+
+.contact button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 1.6rem;
 }
