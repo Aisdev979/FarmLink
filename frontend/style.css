@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --orange-accent: #FFCB3D;
+    --text-green: #007A44;
+    --white: #FFFFFF;
+    --text-grey: #494949;
+    --lighter-grey: #979797;
+    --black: #000000;
+
+
+
+    /* 
+     - Why choose farmlink
+     - About farmlink nigeria
+    */
+    
+    --light-orange: #FFF7ED;
+    --light-blue: #EFF6FF;
+    --light-green: #DCFCE7;
+
+    /*
+     - Why choose farmlink - progress bar, icon and rate numbers
+     - Marketplace - price
+     - About farmlink nigeria - icon, founded, members, support
+    */
+
+    --dark-orange: #F97316;
+    --dark-blue: #3B82F6;
+    --dark-green: #22C55E;
+
+    /*Get started btn, login btn, all categories*/
+
+    /*marketplace*/
+    --bg-grey: #F9FAFB;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: var(--text-grey);
+}
+
+.marketplace {
+    background-color: var(--bg-grey);
+    padding-block: 4em;
+}
+
+.marketplace__container,
+.product {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.marketplace__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.7em;
+    flex-wrap: wrap;
+}
+
+.heading__title {
+    font-size: 5rem;
+    color: var(--black);
+}
+
+.heading__description {
+    font-size: 2.4rem;
+}
+
+.marketplace__select,
+.marketplace__button {
+    cursor: pointer;
+    padding: 1.4rem 3.2rem;
+    border-radius: 10px;
+    border: 1.5px solid #2E7D32;
+    font-size: 2rem;
+    margin-right: 2em;
+}
+
+.marketplace__button {
+    cursor: pointer;
+    display: inline-block;
+    color: #2E7D32;
+    padding: 1.4rem 3rem;
+    border: none;
+    border-bottom: 5px solid #2E7D32;
+    border-radius: 8px;
+    font-size: 2rem;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.product__card {
+    width: 295px;
+    box-shadow: 1px 1px 3px var(--text-grey);
+    margin-bottom: 2em;
+    border-radius: 10px;
+
+}
+
+.product__image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.details {
+    padding: 2.5em;
+}
+
+.product__farmer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+.product__farmer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+.product__farmer-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.product__name {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: var(--black);
+}
+
+.product__description {
+    font-size: 1.6rem;
+}
+
+.product__pricing {
+    display: flex;
+    align-items: center;
+    gap: 6em;
+    margin-top: 1.6em;
+}
+
+.product__price {
+    width: 50px;
+}
+
+.product__price-value {
+    font-size: 2rem;
+    color: var(--text-green);
+    font-weight: 800;
+}
+
+.product__price-unit,
+.product__availability {
+    font-size: 1.2rem;
+}
+
+.product__availability-count {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #2A722E;
+    color: var(--white);
+    border: none;
+    padding: 1.5rem 2rem;
+    margin: 1em 1em 1em 0;
+    border-radius: 10px;
+}
+
+.contact button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 1.6rem;
+}
+
+.invalid {
+    font-size: 3rem;
+    color: var(--text-grey);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(100%);
+    text-align: center;
+}
+
+@media(min-width: 100em) {
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
