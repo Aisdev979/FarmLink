@@ -1,0 +1,57 @@
+/* Register */
+.Register {
+    display: flex;
+    align-items: center;
+    margin-top: 4.9em;
+    gap: 7px;
+
+}
+.Register-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    font-size: var( --font-size-base-md);
+    padding: 1.5em;
+    border-radius: var(--radius-xs);
+    border: none;
+    outline: none;
+}
+
+
+
+.first-button {
+    background-color: var(--colorlight-yellow);
+}
+.first-button:hover {
+    background-color: var(--colorlight-yellow-dark);
+}
+.first-button span:hover {
+    color: var(--color-background);
+}
+.first-button img {
+    filter: none;
+    transition: filter 0.2s ease-in-out;
+}
+.first-button img:hover {
+    filter: brightness(0) invert(1);
+}
+/* second-button */
+.second-button span {
+    color: var(--color-primary);
+}
+
+.second-button:hover {
+    background-color: rgba(200, 243, 200, 0.808);
+    
+}
+.second-button span:hover {
+    color: var(--color-background);
+}
+.second-button img {
+    filter: none;
+    transition: filter 0.2s ease-in-out;
+}
+.second-button img:hover {
+    filter: brightness(0) invert(1);
+}
