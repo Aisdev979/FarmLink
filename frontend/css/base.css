@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-base);
 }
 a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
    color: var(--color-link); 
    text-decoration: none;
    font-weight: var(--font-weight-sm);
@@ -28,4 +31,12 @@ a {
 a:hover{
    
     color: var( --color-primary-hover);
+}
+a img {
+  width: 2.5rem;
+  height: 2.25rem;
+}
+li {
+  text-decoration: none;
+  list-style: none;
 }
