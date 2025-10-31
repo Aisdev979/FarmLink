@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+/* html {
+    font-size: 62.5%;
+} */
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--color-background);
   font-size: var(--font-size-base);
   font-weight: 500;
+  color: var(--text-grey);
+  line-height: 1.5;
   
   
 }

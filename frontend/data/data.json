@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "productName": "Fresh Yam",
+    "description": "Fresh, organic white yam tubers. Perfect for pounding, boiling, or frying.",
+    "price": 800,
+    "unit": "tuber",
+    "available": "900+",
+    "availabilityLabel": "Available",
+    "category": "Root Crops",
+    "farmer": {
+      "name": "Fatdan Farms",
+      "location": "Ibadan",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/yam.jpg"
+  },
+  {
+    "id": 2,
+    "productName": "Organic Tomatoes",
+    "description": "Plump, red, and juicy organic tomatoes — freshly harvested.",
+    "price": 2500,
+    "unit": "basket",
+    "available": "350+",
+    "availabilityLabel": "Available",
+    "category": "Vegetables",
+    "farmer": {
+      "name": "GreenField Agro",
+      "location": "Abeokuta",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/tomatoes.jpg"
+  },
+  {
+    "id": 3,
+    "productName": "Sweet Potatoes",
+    "description": "Naturally sweet and rich in nutrients — ideal for roasting or boiling.",
+    "price": 700,
+    "unit": "kg",
+    "available": "700+",
+    "availabilityLabel": "Available",
+    "category": "Root Crops",
+    "farmer": {
+      "name": "Sunrise Farms",
+      "location": "Benin City",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/sweet-potatoes.jpg"
+  },
+  {
+    "id": 4,
+    "productName": "Plantain Bunch",
+    "description": "Fresh green and ripe plantains — perfect for frying or boiling.",
+    "price": 1500,
+    "unit": "bunch",
+    "available": "400+",
+    "availabilityLabel": "Available",
+    "category": "Fruits",
+    "farmer": {
+      "name": "Eko Green Farms",
+      "location": "Lagos",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/plantain-bunch.jpg"
+  },
+  {
+    "id": 5,
+    "productName": "Fresh Maize",
+    "description": "Tender sweet corn, great for grilling or boiling.",
+    "price": 300,
+    "unit": "cob",
+    "available": "1200+",
+    "availabilityLabel": "Available",
+    "category": "Grains",
+    "farmer": {
+      "name": "Harvest Hub",
+      "location": "Osogbo",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/dry-corn.jpg"
+  },
+  {
+    "id": 6,
+    "productName": "Cocoyam",
+    "description": "Locally grown cocoyam — excellent for soups and stews.",
+    "price": 1000,
+    "unit": "kg",
+    "available": "500+",
+    "availabilityLabel": "Available",
+    "category": "Root Crops",
+    "farmer": {
+      "name": "RootGrow Farms",
+      "location": "Enugu",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/cocoyam.jpg"
+  },
+  {
+    "id": 7,
+    "productName": "Watermelon",
+    "description": "Juicy, sweet, and hydrating watermelons — farm fresh.",
+    "price": 1200,
+    "unit": "fruit",
+    "available": "300+",
+    "availabilityLabel": "Available",
+    "category": "Fruits",
+    "farmer": {
+      "name": "TropiFresh Farms",
+      "location": "Lokoja",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/watermelon.jpg"
+  },
+  {
+    "id": 8,
+    "productName": "Pepper Mix",
+    "description": "Assorted pepper mix — ideal for soups and stews.",
+    "price": 1800,
+    "unit": "basket",
+    "available": "250+",
+    "availabilityLabel": "Available",
+    "category": "Vegetables",
+    "farmer": {
+      "name": "AgroLink Farms",
+      "location": "Port Harcourt",
+      "logo": "./assets/hero-image.png"
+    },
+    "image": "./assets/pepper-mix.jpg"
+  }
+]

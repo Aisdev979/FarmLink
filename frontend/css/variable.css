@@ -13,6 +13,21 @@
     --color-link : #4E4E4E;
     --colorlight-yellow: #FFCB3D;
     --colorlight-yellow-dark: #fcbb0b;
+    --orange-accent: #FFCB3D;
+    --text-green: #007A44;
+    --white: #FFFFFF;
+    --text-grey: #494949;
+    --lighter-grey: #979797;
+    --black: #000000;
+     --light-orange: #FFF7ED;
+    --light-blue: #EFF6FF;
+    --light-green: #DCFCE7;
+
+     --dark-orange: #F97316;
+    --dark-blue: #3B82F6;
+    --dark-green: #22C55E;
+
+    --bg-grey: #F9FAFB;
 
    /* Font */
    --font-family: 'Inter', sans-serif;
@@ -39,7 +54,7 @@
    /* border border-radius */
    --radius-xs: 0.625rem;
    --radius-sm: 1.0625rem;
-   /* --radius-md: 10px; */
+   --radius-md: 1.25rem;
    --radius-lg: 1.5625rem;
    
 }
