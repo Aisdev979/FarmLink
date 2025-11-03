@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+/* html {
+    font-size: 62.5%;
+} */
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--color-background);
   font-size: var(--font-size-base);
   font-weight: 500;
+  color: var(--text-grey);
+  line-height: 1.5;
   
   
 }
@@ -17,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-base);
 }
 a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
    color: var(--color-link); 
    text-decoration: none;
    font-weight: var(--font-weight-sm);
@@ -28,4 +36,12 @@ a {
 a:hover{
    
     color: var( --color-primary-hover);
+}
+a img {
+  width: 2.5rem;
+  height: 2.25rem;
+}
+li {
+  text-decoration: none;
+  list-style: none;
 }

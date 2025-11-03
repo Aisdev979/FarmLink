@@ -2,8 +2,10 @@
 .Register {
     display: flex;
     align-items: center;
-    margin-top: 4.9em;
-    gap: 7px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+    gap: 1em;
 
 }
 .Register-btn {
@@ -55,3 +57,5 @@
 .second-button img:hover {
     filter: brightness(0) invert(1);
 }
+
+
