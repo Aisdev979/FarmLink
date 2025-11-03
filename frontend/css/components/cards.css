@@ -1,10 +1,9 @@
 /* why choose farmlink */
 
 .reasons__container {
-  max-width: 80%;  
- 
+  width: 95%;  
   display: flex;
-   margin-inline: auto;
+  margin-inline: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,8 +11,9 @@
   padding-top: 4rem;
   margin-bottom: 10rem;
 }
+
 .reasons__heading {
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   font-family: "Inter", sans-serif;
   text-align: center;
   font-weight: 700;
@@ -22,47 +22,45 @@
   letter-spacing: 0%;
   color: #000000;
 }
+
 .reasons__paragraph {
-  font-family: "Inter" 18pt;
+  font-family: "Inter" sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
   color: #979797;
 }
+
 .card__container {
+  width: 95%;
   display: flex;
-  
   justify-content: space-between;
   align-items: flex-start;
-  
-  flex-wrap: nowrap;
-   
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
+
 .card-two__container {
   display: flex;
-  width: 80%;
   margin-inline: auto;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
   flex-wrap: nowrap;
-   
   margin-top: 1rem;
+
 }
 /* @media (min) */
 .card {
-  flex: 1 ;   
-  max-width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2.5rem;
+  padding: 1.5rem;
   gap: 1rem;
-  padding: 5rem;
+  margin-bottom: 3em;
   border-radius: 15px;
   translate: 0.3s;
   height: auto;
@@ -89,11 +87,12 @@
   text-align: center;
   font-weight: 700;
   font-style: Bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: 0%;
   margin-top: 1.5rem;
 }
+
 .card-image {
   width: 57px;   /* or any unit: em, rem, etc. */
   height: 57px;
@@ -101,15 +100,15 @@
 }
 
 .card__text {
-  
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-size: 5.6rem;
+  font-size: 1.2rem;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
   color: #585858;
+  margin-bottom: 1em;
 }
 .progress {
   display: flex;

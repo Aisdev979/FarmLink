@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmlink</title>
+  <title>Connecting Nigerian Farmers and Buyers Directly | FarmLink</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
     rel="stylesheet"
@@ -15,31 +16,40 @@
   <header class="site-header">
     <div class="container nav-container">
       <!-- Logo -->
-      <div class="logo-container">
-        <a href="index.html" class="logo">
-          <img src="assets/farmlink 1.png" alt="My Logo" />
-        </a>
-        <span class="logo-name">
-          <h1>FarmLink</h1>
-          <h2>Nigeria</h2>
-        </span>
-      </div>
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+            <img src="assets/farmlink 1.png" alt="My Logo" />
+            </a>
+            <span class="logo-name">
+                <h1>FarmLink</h1>
+                <h2>Nigeria</h2>
+            </span>
+        </div>
+
+        <div>
+            <img class="open-menu" src="./assets/open-menu.png" alt="open-menu">
+        </div>
 
       <!-- Navigation links -->
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
-          <li><a href="workflow.html" class="nav-link">How it works</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-        </ul>
-      </nav>
+        <div class="nav-header">
+            <div>
+                <img class="close-menu" src="./assets/close-menu.png" alt="close-menu">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                    <li><a href="workflow.html" class="nav-link">How it works</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
 
-      <!-- Login section -->
-      <div class="login-container">
-        <button class="login-button">Login</button>
-        <button id="get-started">Get Started</button>
-      </div>
+            <!-- Login section -->
+            <div class="login-container">
+                <button class="login-button">Login</button>
+                <button id="get-started">Get Started</button>
+            </div>
+        </div>
     </div>
   </header>
 
@@ -53,9 +63,8 @@
         </h1>
         <p>
           Join Nigeria's most trusted agricultural marketplace.
-          <br />Connect with verified farmers, discover fresh produce,
-          <br />and build sustainable farming relationships across all
-          <br />36 states.
+          Connect with verified farmers, discover fresh produce,
+          36 states.
         </p>
 
         <form class="Search-bar">
@@ -93,16 +102,15 @@
             </span>
           </div>
           <img class="image" src="assets/hero-image.png" alt="hero-image" />
+          <div class="img-down-body">
+                <img src="assets/handshake.png" alt="" />
+                <span>
+                <h1>500+</h1>
+                <h2>Successful Connections</h2>
+                </span>
+            </div>
         </div>
       </figure>
-
-      <div class="img-down-body">
-        <img src="assets/handshake.png" alt="" />
-        <span>
-          <h1>500+</h1>
-          <h2>Successful Connections</h2>
-        </span>
-      </div>
     </div>
   </main>
 
@@ -111,7 +119,7 @@
       <div class="reasons__container">
         <h2 class="reasons__heading">Why Choose Farmlink Nigeria?</h2>
         <p class="reasons__paragraph">
-          We ensure every connection is safe, verified, and trustworthy through <br>
+          We ensure every connection is safe, verified, and trustworthy through
           our comprehensive NIN-based verification system.
         </p>
         <div class="card__container">
@@ -140,7 +148,7 @@
             <h3 class="card__title">Verified Farmers</h3>
             <p class="card__text">
               Every farmer is manually verified using their National
-              Identification Number (NIN) <br>  by our admin team before they can list 
+              Identification Number (NIN) by our admin team before they can list 
               products.
             </p>
             <div class="progress">
@@ -184,7 +192,7 @@
             <h3 class="card__title">Trusted Buyers</h3>
             <p class="card__text">
               All buyers undergo the same rigorous verification process,
-              ensuring safe and <br> reliable transactions for our farming <br> community.
+              ensuring safe and reliable transactions for our farming community.
             </p>
             <div class="progress">
               <div class="progress__text">
@@ -215,7 +223,7 @@
             <h3 class="card__title">Direct Connection</h3>
             <p class="card__text">
               Connect directly with farmers via phone or WhatsApp. No middlemen,
-              no hidden <br> fees, just honest agricultural trade.
+              no hidden fees, just honest agricultural trade.
             </p>
             <div class="progress" id="progress">
               <div class="progress__text">
@@ -652,7 +660,7 @@
     </div>
   </footer>
 
-  <script src="./Js/mockData.js"></script>
   <script src="./Js/main.js"></script>
+  <script src="./Js/nav.js"></script>
 </body>
 </html>

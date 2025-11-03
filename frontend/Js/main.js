@@ -1,26 +1,17 @@
-// js/main.js
-
 let productsParent = document.querySelector('.product');
 const categories = document.querySelector('#categories');
 const marketPlaceBtn = document.querySelector('.marketplace__button');
 
-let allProducts = [];
-
-// ✅ toggle between mock data and JSON fetch
-const USE_MOCK = true;
+let allProducts;
 
 async function getData() {
     try {
-        if (USE_MOCK) {
-            // from mockData.js
-            allProducts = mockProducts;
-        } else {
-            // from local data.json
-            const res = await fetch('../data/data.json');
-            allProducts = await res.json();
-        }
+
+        const res = await fetch('./Js/mockData.json');
+        allProducts = await res.json();
+
     } catch (error) {
-        console.log("Error loading data:", error);
+        console.log(error);
     }
 }
 
@@ -32,11 +23,11 @@ function renderProducts(products) {
         `
             <div id="product-details" class="product__card">
 
-                <img src="${data.image}" alt="${data.productName}" class="product__image" />
+                <img src=${data.image} alt="A variety of fresh produce" class="product__image" />
 
                 <div class="details">
                     <div class="product__farmer">
-                        <img src="${data.farmer.logo}" alt="${data.farmer.name} logo" class="product__farmer-logo" />
+                        <img src=${data.farmer.logo} alt="FarmLink logo" class="product__farmer-logo" />
                         <div class="product__farmer-info">
                             <p class="product__farmer-name">${data.farmer.name}</p>
                             <span class="product__farmer-location">
@@ -53,7 +44,7 @@ function renderProducts(products) {
 
                     <div class="product__pricing">
                         <p class="product__price">
-                            <strong class="product__price-value">${data.price}</strong>
+                            <strong class="product__price-value">₦${data.price}</strong>
                             <span class="product__price-unit">/${data.unit}</span>
                         </p>
 
@@ -69,7 +60,7 @@ function renderProducts(products) {
                     <div class="contact">
                         <button>
                             <div>
-                                <img src="./assets/call.png" alt="call logo" />
+                                <img src="./assets/call.png" alt="whatsapp logo" />
                                 <p>Call</p>
                             </div>
                         </button>
@@ -82,26 +73,26 @@ function renderProducts(products) {
                     </div>
                 </div>
             </div>
-        `;
+        `
         
         productsParent.innerHTML += productCard;
     });
 }
 
 async function init() {
-    await getData();
-    renderProducts(allProducts);
+    await getData();          // fetch and populate allProducts
+    renderProducts(allProducts);  // now allProducts is defined
 }
 
 init();
 
 categories.addEventListener('change', async (event) => {
-    const selectedCategory = event.target.value;
-    const filteredProducts = allProducts.filter(data => data.category === selectedCategory);
+    const selectedCategories = event.target.value;
+    const userCategories = allProducts.filter(data => data.category === selectedCategories);
 
-    renderProducts(filteredProducts);
+    renderProducts(userCategories);
 
-    if (filteredProducts.length === 0) {
+    if(userCategories.length === 0) {
         productsParent.innerHTML = `<p class='invalid'>Not available</p>`;
     }
 });
