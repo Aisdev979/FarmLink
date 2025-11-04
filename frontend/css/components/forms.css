@@ -1,6 +1,7 @@
 .Search-bar {
     display: flex;
     max-width:37.5rem;
+    margin-inline: auto;
     padding: 1em 0.5rem;
     justify-content: center;
     align-items: center;

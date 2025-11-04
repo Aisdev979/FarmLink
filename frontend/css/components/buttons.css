@@ -3,24 +3,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 2em 0;
     gap: 1em;
 
 }
+
 .Register-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
     font-size: var( --font-size-base-md);
-    padding: 1.5em;
+    padding: 1.5em 1em;
     border-radius: var(--radius-xs);
     border: none;
     outline: none;
 }
-
-
 
 .first-button {
     background-color: var(--colorlight-yellow);
@@ -59,3 +58,9 @@
 }
 
 
+@media(min-width: 50em) {
+    .Register {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}

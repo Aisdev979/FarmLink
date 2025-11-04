@@ -48,7 +48,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 1rem;
 
 }
