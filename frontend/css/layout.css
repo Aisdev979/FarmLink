@@ -689,7 +689,7 @@
 .libery {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: var(--space-sm);
     padding-top: 2em;
 }
@@ -709,6 +709,7 @@
     border-radius: var(--radius-xs);
     color: var(--color-background);
 }
+
 .link-tag h1 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -878,6 +879,11 @@
         justify-content: space-between;
         flex-direction: row;
         padding-bottom: 8em; 
+    }
+
+    .libery {
+        width: 80%;
+        flex-direction: row;
     }
 }
 
