@@ -291,7 +291,8 @@
   border-radius: 12px;
   width: 80%;
   margin: 5rem auto 0;
-  
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .stat-item h3 {

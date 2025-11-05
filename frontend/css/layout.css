@@ -281,14 +281,12 @@
     width: 100%;
     background-color: var(--bg-grey);
     padding-block: 4em;
-   
-   
 }
 
-.marketplace__container,
-.product {
-    width: 95%;
+.marketplace__container{
+    width: 90%;
     margin: 0 auto;
+
 }
 
 .marketplace__container {
@@ -302,7 +300,7 @@
 .heading__title {
     font-weight:var(--font-weight-md);
     line-height: 100%;
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     color: var(--black);
 }
 
@@ -315,13 +313,13 @@
 .marketplace__select{
     cursor: pointer;
     padding: 1.4rem 3rem;
+    margin-bottom: 1em;
+    margin-right: 1rem;
     border-radius: 10px;
     border: 1.5px solid #2E7D32;
     border-top: 3px solid #2E7D32;
     color: #494949;
     font-size: var(--font-size-base-md);
-    
-    
 }
 
 .marketplace__button {
@@ -336,10 +334,9 @@
     border-bottom: 5px solid #2E7D32;
     border-radius: 8px;
     font-size: var(--font-size-base-md);
-    margin-left: 1rem;
     box-sizing: border-box;
-    /* margin-right: 1.5rem; */
 }
+
 .marketplace__button::before {
     content: "";
     position: absolute;
@@ -370,6 +367,8 @@
 }
 
 .product__card {
+    width: 90%;
+    margin-inline: auto;
     box-shadow: 2px 6px 1px -3px rgb(0 0 0 / 0.1),
     -2px 4px 6px -4px rgb(0 0 0 / 0.1);
     margin-bottom: 2em;
@@ -385,7 +384,7 @@
 }
 
 .details {
-    padding: 2.5em;
+    padding: 1.5em;
 }
 
 .product__farmer {
@@ -450,6 +449,7 @@
 .contact {
     display: flex;
     align-items: center;
+    
 }
 
 .contact button {
@@ -530,6 +530,8 @@
 
 /* How farmlinks work */
 .roadmap-section {
+    width: 95%;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -545,7 +547,6 @@
 }
 .map-content {
     display: flex;
-    width: 80%;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
@@ -631,14 +632,12 @@
     width: 80%;
     margin-inline: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-     /* padding: 1em ; */
-     padding-bottom: 8em;
-     
-     
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 8em; 
 }
+
 .footer-text {
     margin-top: 3em;
 }
@@ -690,17 +689,23 @@
 .libery {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: var(--space-sm);
     padding-top: 2em;
 }
+
 .footer-code {
     margin-top: 2.5em;
 }
 
+.footer-code img {
+    width: 100%;
+}
+
 .link-tag {
+    width: 100%;
     background-color:var(--color-dark);
-    width: 30%;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: var(--radius-xs);
     color: var(--color-background);
 }
@@ -732,16 +737,16 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 1em;
+    flex-wrap: wrap;
 }
 .down-footer-section {
     width: 80%;
     margin-inline: auto;
     display: flex;
-    
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
     padding-top: 1em;
+    flex-wrap: wrap;
     
 }
 
@@ -835,6 +840,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 5em;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 2em;
 }
 .term-container h1 {
     font-weight: var(--font-weight-sm);
@@ -860,3 +868,21 @@
     color: var(--color-primary-hover);;
 }
 
+@media(min-width: 50em) {
+    .footer-container {
+        position: relative;
+        width: 80%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-bottom: 8em; 
+    }
+}
+
+@media(min-width: 70em) {
+    .term-container {
+        flex-direction: row;
+    }
+}
