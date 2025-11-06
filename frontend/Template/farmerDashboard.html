@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmers Dashboard | FarmLink</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="index.html" class="logo">
+            <img src="../assets/farmlink 1.png" alt="My Logo" />
+          </a>
+          <span class="logo-name">
+            <h1>FarmLink</h1>
+            <h2>Nigeria</h2>
+          </span>
+        </div>
+
+        <div>
+          <img
+            class="open-menu"
+            src="../assets/open-menu.png"
+            alt="open-menu"
+          />
+        </div>
+
+        <!-- Navigation links -->
+        <div class="nav-header">
+          <div>
+            <img
+              class="close-menu"
+              src="../assets/close-menu.png"
+              alt="close-menu"
+            />
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li>
+                <img src="../assets/home.png" alt="home icon" />
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li>
+                <img src="../assets/listing.png" alt="My listing icon" />
+                <a href="marketplace.html" class="nav-link">My Listings</a>
+              </li>
+              <li>
+                <img src="../assets/insight.png" alt="insights icon" />
+                <a href="workflow.html" class="nav-link">Insights</a>
+              </li>
+              <li>
+                <img src="../assets/Notification.png" alt="notification icon" />
+                <a href="about.html" class="nav-link">Notifications</a>
+              </li>
+              <li>
+                <img
+                  class="farmers_profile"
+                  src="../assets/farmers_profile.png"
+                  alt=""
+                />
+                <a href="about.html" class="nav-link">Profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="dashboard">
+        <!-- User detailed profile -->
+        <div class="dashboard__profile">
+          <div class="Users_profile">
+            <img src="../assets/farmers_profile.png" alt="farmers_profile" />
+          </div>
+          <section>
+            <p>Welcome back, Adewale Uche!</p>
+            <div class="users__location">
+              <img src="../assets/location.png" alt="location" />
+              <p>Edo, Nigeria</p>
+            </div>
+            <div class="users__verified">
+              <img src="../assets/verified-user.png" alt="verify" />
+              <p>Verified Farmer</p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Add listings btn -->
+        <div class="dashboard__listing--btn">
+          <button>+ Add New Product Listing</button>
+        </div>
+      </div>
+
+      <!-- Product Listings -->
+      <div class="table-container">
+        <h2>Product Listings</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Product Name</th>
+              <th class="price">Price</th>
+              <th>Quantity</th>
+              <th>Status</th>
+              <th class="action">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="../assets/tomatoes.jpg" /></td>
+              <td>Organic Tomatoes</td>
+              <td class="price">₦ 90,000</td>
+              <td>20kg</td>
+              <td><span class="badge active--state">Active</span></td>
+              <td>
+                <button class="edit-btn">
+                    <img src="../assets/edit.png" alt="edit icon">
+                   <span>Edit</span>
+                </button>
+                <button class="danger-btn">
+                    <img src="../assets/switch.png" alt="switch icon">
+                   <span>Deactivate</span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img src="../assets/yam.jpg" /></td>
+              <td>Fresh Carrots</td>
+              <td class="price">₦ 40,000</td>
+              <td>180kg</td>
+              <td><span class="badge active--state">Active</span></td>
+              <td>
+                <button class="edit-btn">
+                    <img src="../assets/edit.png" alt="edit icon">
+                   <span>Edit</span>
+                </button>
+                <button class="danger-btn">
+                    <img src="../assets/switch.png" alt="switch icon">
+                   <span>Deactivate</span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img src="../assets/sweet-potatoes.jpg" /></td>
+              <td>Russet Potatoes</td>
+              <td class="price">₦ 10,000</td>
+              <td>50kg</td>
+              <td><span class="badge low">Low Stock</span></td>
+              <td>
+                <button class="edit-btn">
+                    <img src="../assets/edit.png" alt="edit icon">
+                   <span>Edit</span>
+                </button>
+                <button class="danger-btn">
+                    <img src="../assets/switch.png" alt="switch icon">
+                   <span>Activate</span>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img src="../assets/plantain-bunch.jpg" /></td>
+              <td>Strawberries</td>
+              <td class="price">₦ 5,000</td>
+              <td>80kg</td>
+              <td><span class="badge inactive">Inactive</span></td>
+              <td>
+                <button class="edit-btn">
+                    <img src="../assets/edit.png" alt="edit icon">
+                   <span>Edit</span>
+                </button>
+                <button class="danger-btn">
+                    <img src="../assets/switch.png" alt="switch icon">
+                   <span>Activate</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Insights -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="insight__card">
+          <div class="card-header">
+            <span>Total Views</span>
+            <span>👁️</span>
+          </div>
+          <div class="views-number">12,547</div>
+          <div class="text-muted">Last 30 days</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="insight__card">
+          <div class="card-header">
+            <span>Popular Items</span>
+            <span>📈</span>
+          </div>
+
+          <div class="list-row">
+            <span>Organic Tomatoes</span>
+            <span class="text-muted">3245 views</span>
+          </div>
+          <div class="list-row">
+            <span>Fresh Carrots</span>
+            <span class="text-muted">2891 views</span>
+          </div>
+          <div class="list-row">
+            <span>Green Lettuce</span>
+            <span class="text-muted">2156 views</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="insight__card">
+          <div class="card-header">
+            <span>Market Prices</span>
+            <span>₦</span>
+          </div>
+
+          <div class="list-row">
+            <span>Tomatoes</span>
+            <span>₦4,500/kg <span class="positive">+5%</span></span>
+          </div>
+          <div class="list-row">
+            <span>Carrots</span>
+            <span>₦222.2/kg <span class="negative">-3%</span></span>
+          </div>
+          <div class="list-row">
+            <span>Lettuce</span>
+            <span>₦6,000/kg <span class="positive">+2%</span></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../Js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-header,
+.nav-header {
+    background-color: #E5E7EB;
+}
+
+.nav-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nav-list li:has([alt="My listing icon"]) img {
+    background-color: black;
+    padding: 0.2em;
+}
+
+.farmers_profile {
+    border-radius: 50%;
+}
+
+.dashboard {
+    background-color: #BED7BF;
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 7em;
+    border-radius: 8px;
+    padding: 2.125em 1em;
+}
+
+.Users_profile img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+}
+
+.dashboard__profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    line-height: 2;
+}
+
+.users__location,
+.users__verified {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.users__verified img {
+    width: 18px;
+}
+
+.dashboard__listing--btn button {
+    display: inline-block;
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    border: none;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.table-container {
+    width: 80%;
+    margin-inline: auto;
+    background: #E5E7EB;
+    border-radius: 8px;
+    overflow-x: auto; /* Makes table scrollable on small screens */
+    margin-top: 2.0625em;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.table-container h2 {
+    border-bottom: 0.8px solid rgba(0,0,0,0.1);
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Prevent table from squishing */
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+th {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: black;
+}
+
+tr {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.table-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.price {
+    color: #2E7D32;
+}
+
+.active--state { background: #BED7BF; color: #008236; }
+.low { background: #FFEFC3; color: #BB4D00; }
+.inactive { background: #EBF3FE; color: #364153; }
+
+.action {
+    text-align: right;
+}
+
+td:has(button) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.edit-btn,
+.danger-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 6px 10px;
+    margin-top: 2em;
+    border: 0.8px solid rgba(0,0,0,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit-btn img,
+.danger-btn img {
+    width: 16px;
+    height: auto;
+}
+
+
+@media (max-width:40em) {
+    .dashboard {
+        width: 90%;
+    }
+
+    .dashboard__listing--btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table-container {
+        width: 90%;
+    }
+}
+
+.cards {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 2em;
+}
+
+.insight__card {
+    background: #e8f0e9;
+    padding: 2em;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8em;
+}
+
+@media (min-width:50em) {
+    .cards {
+        width: 90%;
+        gap: 2em;
+    }
+
+    .insight__card {
+        width: 100%;
+    }
+}
+
+@media (min-width:60em) {
+    .cards {
+        width: 90%;
+    }
+
+    .insight__card {
+        width: 50%;
+    }
+}
