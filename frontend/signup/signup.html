@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register as a Farmer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="signup-container">
+    <!-- Left Column -->
+    <section class="form-section" role="form" aria-label="Farmer sign-up form">
+      <h1 class="form-title">Register as a Buyer</h1>
+      <p class="form-subtitle">
+        Lets get you set up so you can connect directly with verified local farmers.
+      </p>
+
+          <div class="icon">
+             <ul>
+                <li><a href=""><img style="width: 30px; height: 30px;" src="../assets/Facebook.png" alt="Facebook-icon"></a></li>
+                <li><a href=""></a><img style="width: 30px; height: 30px;" src="../assets/Google.png" alt="Google-icon"></li>
+             </ul>
+          </div>
+
+         <div class="divider">or</div>
+
+      <form id="farmer-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text"  required />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input id="location" name="location" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="nin">NIN</label>
+            <input id="nin" name="nin" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" required />
+          </div>
+
+          <div class="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I accept the Terms and Conditions</label>
+        </div>
+
+        <p class="login-link">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+        </div>
+
+        <!-- <div class="photo-upload">
+          <label for="photo">Add Photo</label>
+          <input id="photo" type="file" accept="image/png, image/jpeg, image/webp" aria-label="Add photo" />
+          <small>Supports PNG, JPEG, JPG, WEBP</small>
+        </div> -->
+        <div class="upload-section">
+                       <input type="file" id="photoUpload" accept="image/*" hidden>
+                       
+                        <label for="photoUpload" class="upload-btn upload-plus">
+                          <img src="../assets/Add Image.png" alt="">
+                        </label>
+                        <h1>Add photo</h1>
+
+                       <span id="fileName" class="file-name">Supports PNG, JPEG, JPG, WEBP</span>
+                </div>
+
+         <div class="submit">
+            <button type="submit" class="submit-btn">Submit</button>
+         </div>
+
+      </form>
+    </section>
+
+    <!-- Right Column -->
+    <aside class="aside-section">
+        <div class="logo">
+            <img src="../assets/farmlinkw 1.png" alt="">
+        </div>
+      <div class="buyer-box">
+        <h2 style="color: #fff;;">Are you a</h2>
+        <h2 style="color: #FFCB3D;">Farmer?</h2>
+        <button class="buyer-btn">Sign up</button>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

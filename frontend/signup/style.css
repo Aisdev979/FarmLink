@@ -1,0 +1,284 @@
+/* === GLOBAL CSS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-columns: 40% 1fr; /* aside (left) smaller, form (right) larger */
+  height: 100vh;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+}
+
+.icon ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.icon li{
+  background-color: #F8F7F7;
+  padding: 6px 8px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+} 
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  margin: 1rem;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+.hr-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+
+
+/* ===== LEFT COLUMN ===== */
+.form-section {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  margin-left: 20px;
+  order: 2;
+  margin-top: -20px;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #043e0e;
+  margin-bottom: 0.5rem;
+  display:flex;
+  justify-content: center;
+}
+
+.form-subtitle {
+  font-size: .9rem;
+  color: #000;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  width: 324px;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 1.3rem;
+  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="file"] {
+  height: 40px;
+  width: 300px;
+  border: 1px solid #a4a4a4;
+  border-radius: 8px;
+  padding: 0 0.75rem;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+/* ===== Upload Section ===== */
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 35%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  background-color: #FAFAFA;
+  border-radius: 8px;
+  border: 2px dashed #A4A4A4; 
+}
+
+.upload-section h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.upload-btn {
+  margin-top: 0.5rem;
+}
+
+/* "+" button for upload */
+.upload-plus {
+ 
+  font-weight: 700;
+  color: #026D14;
+  
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.upload-plus:hover {
+  background-color: rgba(2, 109, 20, 0.15);
+  transform: scale(1.05);
+}
+
+.upload-section .file-name {
+  font-size: 12px;
+  font-style: none;
+  color: #333;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.terms label{
+    font-size: 12px;
+}
+
+input[type="checkbox"]{
+  margin-bottom: 9px;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.submit-btn {
+  width: 100%;
+  max-width: 320px;
+  height: 48px;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  background-color: #256729;
+}
+
+.login-link {
+  color: #464646;
+  font-size: 12px;
+  margin-left: 7rem;
+}
+
+.login-link a {
+  color: black;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RIGHT COLUMN (ASIDE) ===== */
+.aside-section {
+  background: url(../assets/Rectangle\ 3466425\(1\).png) no-repeat;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  order: 1;
+}
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.buyer-box {
+  text-align: center;
+  padding-top: 12rem;
+  padding-left: 3rem;;
+}
+
+.buyer-box h2 {
+  font-size: 4rem;
+  margin-bottom: .5rem;
+}
+
+.buyer-btn {
+  border:1px solid  #ffcb3d;
+  background: none;
+  border-radius: 8px;
+  padding: .7rem 2rem;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}
+
+.buyer-box .buyer-btn{
+  margin-top: 30px;
+}
+
+.buyer-btn:hover {
+  background: #ffd95f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .signup-container {
+    grid-template-columns: 1fr;
+  }
+
+  .aside-section {
+    display: none;
+  }
+}
