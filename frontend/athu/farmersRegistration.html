@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmers signup form</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <main class="farmers-signup-container">
+        <section class="signup-section">
+            <div class="form-section">
+            <div class="signup-menu">
+                <div class="Register-tittle">
+                    <h1>Register as a Farmer</h1>
+                    <p>Lets get you set up so you can reach verified <br>
+                       buyers and grow your market with trust.
+                    </p>
+                </div>
+                <div class="media-contact">
+                    <ul>
+                        <li><a href=""> <img src="../assets/Group 86.png" alt=""></a></li>
+                        <li><a href=""><img src="../assets/Group 87.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider">or</div>
+            <!-- Farmer signup form -->
+
+            <form action="" id="farmerForm" class="farmer-form">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone"  required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="6" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword"  required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="nin">NIN</label>
+                        <input type="text" id="nin" name="nin" required>
+                    </div>
+                </div>
+                <div class="terms-and-signin">
+                    <div class="terms-container">
+                        <label for="" class="terms-label">
+                            <input type="checkbox" name="terms" id="terms" required>
+                            i accept the Terms and conditions</a>
+                        </label>
+                    </div>
+                    <div class="sigin-link">
+                        <p>Already have an account? </p>
+                        <a class="underline" href="./login.html">Log in</a>
+                    </div>
+                </div>
+                <div class="upload-section">
+                       <input type="file" id="photoUpload" accept="image/*" hidden>
+                       
+  
+                        <label for="photoUpload" class="upload-btn upload-plus">
+                          <img src="../assets/Add Image.png" alt="">
+                        </label>
+                        <h1>Add photo</h1>
+
+                       <span id="fileName" class="file-name">Supports PNG, JPEG, JPG, WEBP</span>
+                </div>
+
+
+
+                <button type="submit" class="submit-btn">submit</button>
+
+            </form>
+           </div>
+
+            <aside class="description-about">
+                <div class="Up-logo">
+                    <a href="index.html">
+                       <img src="../assets/farmlink 1.png" alt="My Logo" />
+                    </a>
+                    <span class="Up-logo-name">
+                      <h1>FarmLink</h1>
+                      <h2 class="">Conecting Nigerian Farmwrs, buyers, and Agri-tech Innovators</h2>
+                    </span>
+                </div>
+                
+               
+                <div class="content-description">
+                    <h1>Are you a <span>Buyer?</span></h1>
+                    <a href="../athu/buyersResgistration.html">Sign up</a>
+                    
+                </div>
+            </div>
+            </aside>
+
+        </section>
+    </main>
+    <script src="../Js/utils.js"></script>
+</body>
+</html>

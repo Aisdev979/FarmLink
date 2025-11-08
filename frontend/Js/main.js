@@ -12,7 +12,7 @@ const USE_MOCK = true;
 async function getData() {
     try {
         if (USE_MOCK) {
-            // from mockData.js
+            
             allProducts = mockProducts;
         } else {
             // from local data.json

@@ -51,3 +51,1106 @@
     background-color: var(--color-dark-orange-light);
 }
 
+
+/* ===== Farmer Signup Layout ===== */
+
+.farmers-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; 
+  
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+/* Main section with image + form */
+.signup-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch; 
+  width: 80%;
+  height: 100vh;
+  background-color: var(--color-background);
+  margin: auto;
+  padding-left: 2rem;
+  font-size: small;
+}
+/* Buyers form */
+
+.signup-section-buyer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 3rem;
+  align-items: stretch; 
+  width: 80%;
+  height: 100vh;
+  background-color: var(--color-background);
+  margin: auto;
+  padding-right: 2rem;
+  font-size: small;
+}
+
+/* Form section (right side) */
+.form-section {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+/* Image section (left side) */
+.description-about {
+  
+  flex: 1.1;
+  width: 80%;
+  height: 100vh;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background: linear-gradient(#026d14d3, #043e0edc),
+              url("/FarmLink/frontend/assets/farmers-image.jpg");
+  background-position: 68% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-background);
+  
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
+
+
+}
+.description-about-buyer {
+  flex: 1.1;
+  width: 80%;
+  height: 100vh;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: linear-gradient(#026d14d3, #043e0edc),
+              url("/FarmLink/frontend/assets/farmers.jpg");
+  background-position: 40% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-background);
+  
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+
+}
+.Up-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+.side-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    float: left;
+    
+}
+.Up-logo img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1);
+    color: var(--color-background);
+}
+.side-logo img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1);
+    color: var(--color-background);
+}
+.Up-logo-name  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Up-logo-name h1 {
+    font-weight: 900;
+    line-height: 92%;
+    letter-spacing: 0%;
+    color: var(--color-background);
+    font-size: 1.6rem;
+    
+}
+
+.Up-logo-name h2 {
+    font-weight: var(--font-weight-xs);
+    font-size: 0.25rem;
+    line-height: 92%;
+    letter-spacing: 0%;
+    color: #aff0d3ce;
+    
+  
+}
+.content-description {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    gap: 2rem;
+    text-align: center;
+}
+.content-description-buyer {
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+    
+    height: 100vh;
+    gap: 2rem;
+    text-align: center;
+}
+.content-description,
+.content-description-buyer,
+ h1 {
+
+font-weight: 700;
+font-style: Bold;
+font-size: 69px;
+
+line-height: 115.99999999999999%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.content-description span {
+   color: var(--colorlight-yellow);
+
+}
+.content-description-buyer {
+  margin-top: 17rem;
+}
+.content-description-buyer span {
+   color: var(--colorlight-yellow);
+
+}
+
+.content-description a {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 2px solid var(--colorlight-yellow);
+    color: var(--color-background);
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 35px;
+    border-radius: 10px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+}
+.content-description-buyer a {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 2px solid var(--colorlight-yellow);
+    color: var(--color-background);
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 35px;
+    border-radius: 10px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+}
+
+/* ===== Form Content ===== */
+
+.signup-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Register-tittle h1 {
+  font-weight: 600;
+  font-size: 2.1875rem;
+  line-height: 150%;
+  color: #043E0E;
+}
+
+.Register-tittle p {
+  font-weight: var(--font-weight-sm);
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.media-contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.media-contact ul li {
+  padding: 0.5rem;
+  border-radius: 100px;
+  background-color: #F8F7F7;
+}
+
+.media-contact ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ===== Form Layout ===== */
+
+.farmer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-field input {
+  width: 80%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #A4A4A4;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* ===== Upload Section ===== */
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 35%;
+  padding-bottom: 1rem;
+  
+  background-color: #FAFAFA;
+  border-radius: 8px;
+  border: 2px dashed #A4A4A4; 
+}
+
+.upload-section h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.upload-btn {
+  margin-top: 0.5rem;
+}
+
+/* "+" button for upload */
+.upload-plus {
+ 
+  font-weight: 700;
+  color: #026D14;
+  
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.upload-plus:hover {
+  background-color: rgba(2, 109, 20, 0.15);
+  transform: scale(1.05);
+}
+
+.upload-section .file-name {
+  font-size: 12px;
+  font-style: none;
+  color: #333;
+}
+
+/* ===== Terms and Sign-in Section ===== */
+
+.terms-and-signin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.terms-label {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 12px;
+  
+  line-height: 150%;
+}
+
+.sigin-link {
+  display: flex;
+  align-items: center;
+  margin-right: 9%;
+  
+}
+
+.sigin-link p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+ 
+}
+
+.submit-btn {
+  width: 45%;
+  padding: 1rem 1.5rem;
+  margin-top: 2.5rem;
+  
+  margin-bottom: 2rem; 
+  background-color: #026D14;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #043E0E;
+  transform: translateY(-2px);
+}
+
+
+/* ===== Divider ===== */
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  margin: 1rem;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+/* ===== Responsive (for mobile) ===== */
+
+/* ===== Tablet Responsive (600px - 900px) ===== */
+@media (max-width: 1000px) and (min-width: 601px) {
+
+  .farmers-signup-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+       padding: 0;
+      min-height: 100vh;
+  }
+
+  .signup-section {
+      flex-direction: column-reverse; 
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+  .signup-section-buyer {
+    flex-direction: column; 
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+
+  .farmer-form {
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      padding: 0;
+  }
+
+  .search-btn {
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .description-about {
+      width: 100%;
+      height: 70vh; 
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+
+      /* Background image + gradient */
+      background: linear-gradient(rgba(2, 109, 20, 0.699), rgba(4, 62, 14, 0.6)),
+                  url("/FarmLink/frontend/assets/farmers-image.jpg") no-repeat 65% center;
+      background-size: cover;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+  .description-about-buyer {
+      width: 100%;
+      height: 70vh; 
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+
+      /* Background image + gradient */
+      background: linear-gradient(rgba(2, 109, 20, 0.6), rgba(4, 62, 14, 0.6)),
+                  url("/FarmLink/frontend/assets/farmers.jpg") no-repeat 65% center;
+      background-size: cover;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+
+  .description-about .farmhead-logo,
+  .description-about .content-description {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .Up-logo, .farmhead-logo {
+      margin: 0 auto;
+  }
+
+  .description-about .content-description h1 {
+      font-size: 8rem;
+      line-height: 1.2;
+  }
+
+  .description-about .content-description a {
+      font-size: 2.9rem;
+      padding: 1.5rem 2.5rem;
+  }
+
+  .form-section {
+      width: 95%;
+      margin: 0 auto;
+  }
+
+  .Register-tittle h1 {
+      font-size: 2.75rem;
+      line-height: 1.2;
+  }
+
+  .Register-tittle p {
+      font-size: 0.98rem;
+      line-height: 1.3;
+  }
+
+  .form-grid {
+      grid-template-columns: repeat(2fr, 1fr);
+      gap: 1rem;
+      margin-left: 0;
+      gap: 3rem;
+  }
+
+  .form-field input,
+  .submit-btn,
+  .upload-section {
+      width: 100%;
+  }
+
+  .upload-section {
+    width: 50%;
+      margin: 1rem 0;
+  }
+
+  .terms-and-signin {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+  }
+
+  .terms-label {
+      font-size: 0.9rem;
+  }
+
+  .sigin-link {
+      margin-left: 0;
+  }
+
+  .sigin-link p {
+      font-size: 0.9rem;
+  }
+
+  .Up-logo {
+      margin-left: 10px;
+      margin-top: 1rem;
+  }
+  .submit-btn {
+    width: 80%;
+  }
+
+  .divider {
+      width: 100%;
+  }
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+
+  .farmers-signup-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+      min-height: 100vh;
+  }
+
+  .signup-section {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+  .signup-section-buyer {
+          flex-direction: column-reverse;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+  .farmer-form {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .search-btn {
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 100%;
+  }
+
+  .description-about {
+      width: 100%;
+      height: 80%; 
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      
+      /* Background image + gradient */
+      background: linear-gradient(rgba(2, 109, 20, 0.6), rgba(4, 62, 14, 0.6)),
+                  url("/FarmLink/frontend/assets/farmers-image.jpg") no-repeat 65% center;
+      background-size: cover;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+  .description-about-buyer {
+      width: 100%;
+      height: 80%; 
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      
+      /* Background image + gradient */
+      background: linear-gradient(rgba(2, 109, 20, 0.842), rgba(4, 62, 14, 0.815)),
+                  url("/FarmLink/frontend/assets/farmers.jpg") no-repeat 40% center;
+      background-size: cover;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+
+  .description-about .farmhead-logo,
+  .description-about .content-description {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .Up-logo, .farmhead-logo {
+      margin: 0 auto; 
+  }
+
+  .description-about .content-description h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+  }
+
+  .description-about .content-description a {
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+  }
+
+  .form-section {
+      width: 95%;
+      margin: 0 auto;
+  }
+
+  .Register-tittle h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+  }
+
+  .Register-tittle p {
+      font-size: 0.65rem;
+      line-height: 1.3;
+  }
+
+  .form-grid {
+      grid-template-columns: 1fr; 
+      gap: 1rem;
+      margin-left: 0;
+  }
+
+  .form-field input,
+  .submit-btn,
+  .upload-section {
+      width: 100%;
+  }
+
+  .upload-section {
+      margin: 1rem 0;
+  }
+
+  .terms-and-signin {
+    width: 100%;
+    display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+      justify-content: center;
+      justify-content: space-between;
+  }
+
+  .terms-label {
+      font-size: 1rem;
+  }
+  .sigin-link {
+    margin-left: 0;
+  }
+  .sigin-link p{
+      
+      font-size: 1rem;
+  }
+  .Up-logo {
+    margin-left: 10px;
+    margin-top: 1rem;
+  }
+  .divider {
+    width: 100%;
+  }
+}
+
+
+.login__container {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo_section {
+    display: flex;
+
+  width: 80%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.login__left {
+  flex: 1;
+  height: 100vh;
+  background: linear-gradient(
+      155.16deg,
+      rgba(2, 109, 20, 0.7),
+      rgba(4, 62, 14, 0.7)
+    ),
+    url(/FarmLink/frontend/assets/imagesright-background-image.jpg.jpg);
+  background-size: cover;
+  background-position: 76% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 2px 0 10px 1px #868686;
+}
+.gradient {
+  height: 100vh;
+  width: 100%;
+}
+.login__page-description {
+  width: 470px;
+  height: 240px;
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 35px;
+  line-height: 170%;
+  letter-spacing: 0%;
+}
+.login__page-description > h2 {
+  color: #fff;
+}
+.login__page-description > h2 > span {
+  color: rgb(248, 176, 21);
+}
+.login__right {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.login__form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 70%;
+  width: 80%;
+  position: relative;
+  top: -9rem;
+  border: solid rgb(247, 245, 245) 0.5px;
+  border-radius: 20px;
+}
+.login__form__container > h3 {
+  font-family: "Inter";
+  font-weight: 400;
+  color: rgba(4, 62, 14, 1);
+  font-size: 44px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.login__form__container > h3 > p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.farmlink__logo {
+  height: 18rem;
+  position: relative;
+  top: -1.5rem;
+}
+.login__pfp__container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 20rem;
+}
+.user__pfp {
+  background-color: rgba(250, 249, 249, 1);
+;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.input__container {
+  position: relative;
+  width: 70%;
+}
+.input__container > svg {
+  position: absolute;
+  top: 15px;
+  left: 95%;
+  transform: translate(-40%, -50%);
+  z-index: 1;
+}
+
+
+.credential {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: solid #000 1px;
+  font-size: 1rem;
+}
+.credential::placeholder {
+  color: rgba(0, 0, 0, 1);
+  font-size: 0.8rem;
+}
+
+
+.eye-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 14px;
+  width: 70%;
+}
+
+.remember_me__container label {
+  margin-left: 5px;
+}
+
+.options a {
+  color: rgba(70, 70, 70, 1);
+  text-decoration: none;
+}
+
+.form button {
+  width: 320px;
+  height: 48px;
+  opacity: 1;
+  top: 716px;
+  left: 917px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 12px;
+  background-color: rgba(46, 125, 50, 1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.form button:hover {
+  background-color: rgb(33, 92, 36);
+}
+
+.sign_up {
+    display: inline-flex;
+}
+.underline {
+  text-decoration: underline;
+}
+.login__right p:last-of-type {
+  font-size: 15px;
+  color: rgba(70, 70, 70, 1);
+  text-align: center;
+}
+
+.login__right p:last-of-type a {
+  color: #4caf50;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+.login__container {
+    flex-direction: column; 
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .login__right {
+    width: 100%;
+    height: auto; 
+    padding: 50px 20px;
+    padding-top: 0;
+  }
+
+
+
+  .login__left {
+    border-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20rem; 
+  }
+  .login__page-description > h2 {
+    
+    width: 90%;
+    transform: none;
+    text-align: center;
+    margin: auto; 
+    padding-top: 10px; 
+  }
+
+
+  .login__page__description h2 {
+    text-align: center;
+    font-size: 36px; 
+  }
+
+  .farmlink__logo {
+
+    height: 15rem; 
+  }
+
+
+  .login__form__container {
+    width: 90%;
+    max-width: none; 
+    padding: 0;
+  }
+
+  .login__form__container h3 {
+    font-size: 30px;
+  }
+
+  
+.credential, button {
+    padding: 12px; 
+  }
+  .input__container {
+  position: relative;
+  width: 70%;
+}
+.input__container > svg {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+
+}
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .login__left {
+    display: flex;
+    height: 12rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .login__page-description {
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .login__page-description h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 150%; 
+  }
+  .login__form__container {
+    top: -6rem;
+  }
+
+  
+  .farmlink__logo {
+    height: 10rem;
+    top: -1.5rem;
+    align-self: center;
+    margin-left: 0;
+  }
+  .input__container {
+  position: relative;
+  width: 70%;
+}
+.input__container > svg {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  z-index: 1;
+}
+
+
+
+}
+
+

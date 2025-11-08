@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Login page</title>
+  </head>
+
+  <body>
+    <div class="login__container">
+      <div class="logo_section">
+        <div class="login__left">
+          <div class="login__page-description">
+            <h2><span>Log in</span> to Trade Smarter, Faster, And Securely.</h2>
+          </div>
+        </div>
+
+        <div class="login__right">
+          <img
+            class="farmlink__logo"
+            src="../assets/farmlink 2-logo.png"
+            alt="farmlink logo"
+          />
+
+          <div class="login__form__container">
+            <h3>Welcome Back!</h3>
+            <p>Enter your login details below</p>
+
+            <div class="media-contact">
+              <ul>
+                <li>
+                  <a href="#" id="facebookSignIn">
+                    <img src="../assets/Group 86.png" alt="Facebook Sign In" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="googleSignIn">
+                    <img src="../assets/Group 87.png" alt="Google Sign In" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <form action="" class="form" id="loginForm">
+              <div class="input__container">
+                <svg
+                  width="16"
+                  height="13"
+                  viewBox="0 0 16 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 1.625C16 0.73125 15.28 0 14.4 0H1.6C0.72 0 0 0.73125 0 1.625V11.375C0 12.2688 0.72 13 1.6 13H14.4C15.28 13 16 12.2688 16 11.375V1.625ZM14.4 1.625L8 5.6875L1.6 1.625H14.4ZM14.4 11.375H1.6V3.25L8 7.3125L14.4 3.25V11.375Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <input
+                  id="email"
+                  class="email credential"
+                  type="text"
+                  name="user"
+                  placeholder="Email"
+                />
+                <p id="error-msg"></p>
+              </div>
+
+              <div class="input__container">
+                <svg
+                  id="eyeOpen"
+                  class="eye-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="#555"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+
+                <svg
+                  id="eyeClosed"
+                  class="eye-icon hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="#555"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.94 17.94A10.06 10.06 0 0112 19c-7 0-11-7-11-7a17.22 17.22 0 014.09-4.73m3.58-2.1A9.64 9.64 0 0112 5c7 0 11 7 11 7a17.24 17.24 0 01-2.88 3.93M1 1l22 22"
+                  />
+                </svg>
+
+                <input
+                  id="password"
+                  class="credential"
+                  type="password"
+                  placeholder="Password"
+                />
+                <p id="error-msg"></p>
+              </div>
+
+              <div class="options">
+                <div class="remember__me__container">
+                  <input type="checkbox" id="remember__me" />
+                  <label for="remember__me">Remember Me</label>
+                </div>
+                <a href="">Forgot Password</a>
+              </div>
+
+              <button type="submit">Login</button>
+            </form>
+
+            <div class="sign_up">
+              <p>Don't have an account? </p>
+              <a class="underline" href="../athu/farmersRegistration.html">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS should be in utils.js or another separate file -->
+    <script src="../Js/utils.js"></script>
+  </body>
+</html>
