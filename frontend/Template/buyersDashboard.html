@@ -77,29 +77,32 @@
             <img src="../assets/farmers_profile.png" alt="farmers_profile" />
           </div>
           <section>
-            <p>Welcome back, Adewale Uche!</p>
+            <p>
+              Adewale Uche! 
+              <img class="verified" src="../assets/verified-user.png" alt="Verified">
+            </p>
+            <span class="order-status buyer--badge">Buyer</span>
+            
+            <div class="users__verified">
+              <img src="../assets/bag-2.png" alt="bag-2" />
+              <p>Retailer</p>
+            </div>
             <div class="users__location">
               <img src="../assets/location.png" alt="location" />
               <p>Edo, Nigeria</p>
-            </div>
-            <div class="users__verified">
-              <img src="../assets/verified-user.png" alt="verify" />
-              <p>Verified Farmer</p>
             </div>
           </section>
         </div>
       </div>
 
-      <!-- Product Listings -->
+      <!-- order-history -->
       <div class="order-history">
-        <div class="order-history__header">
+        <div class="order-history__content">
           <h2 class="order-history__title">Order History</h2>
           <p class="order-history__subtitle">
             View and manage your past orders
           </p>
-        </div>
 
-        <div class="order-history__content">
           <table class="order-table">
             <thead class="order-table__head">
               <tr class="order-table__row">
@@ -126,9 +129,13 @@
                 </td>
                 <td class="order-table__cell">Oct 28, 2024</td>
                 <td class="order-table__cell order-table__actions">
-                  <button class="order-action order-action--view">View</button>
+                  <button class="order-action order-action--view">
+                    <img src="../assets/eye.png" alt="" />
+                    <span>View</span>
+                  </button>
                   <button class="order-action order-action--reorder">
-                    Reorder
+                    <img src="../assets/refresh.png" alt="" />
+                    <span>Reorder</span>
                   </button>
                 </td>
               </tr>
@@ -145,9 +152,13 @@
                 </td>
                 <td class="order-table__cell">Oct 25, 2024</td>
                 <td class="order-table__cell order-table__actions">
-                  <button class="order-action order-action--view">View</button>
+                  <button class="order-action order-action--view">
+                    <img src="../assets/eye.png" alt="" />
+                    <span>View</span>
+                  </button>
                   <button class="order-action order-action--reorder">
-                    Reorder
+                    <img src="../assets/refresh.png" alt="" />
+                    <span>Reorder</span>
                   </button>
                 </td>
               </tr>
@@ -166,7 +177,10 @@
                 </td>
                 <td class="order-table__cell">Oct 22, 2024</td>
                 <td class="order-table__cell order-table__actions">
-                  <button class="order-action order-action--view">View</button>
+                  <button class="order-action order-action--view">
+                    <img src="../assets/eye.png" alt="" />
+                    <span>View</span>
+                  </button>
                 </td>
               </tr>
 
@@ -184,9 +198,13 @@
                 </td>
                 <td class="order-table__cell">Oct 18, 2024</td>
                 <td class="order-table__cell order-table__actions">
-                  <button class="order-action order-action--view">View</button>
+                  <button class="order-action order-action--view">
+                    <img src="../assets/eye.png" alt="" />
+                    <span>View</span>
+                  </button>
                   <button class="order-action order-action--reorder">
-                    Reorder
+                    <img src="../assets/refresh.png" alt="" />
+                    <span>Reorder</span>
                   </button>
                 </td>
               </tr>
@@ -203,38 +221,55 @@
                 </td>
                 <td class="order-table__cell">Oct 15, 2024</td>
                 <td class="order-table__cell order-table__actions">
-                  <button class="order-action order-action--view">View</button>
+                  <button class="order-action order-action--view">
+                    <img src="../assets/eye.png" alt="" />
+                    <span>View</span>
+                  </button>
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
 
-          <aside class="account-overview">
-            <div class="account-card">
+        <!-- account-overview -->
+        <aside class="account-overview">
+          <h2>Account Overview</h2>
+          <div class="account-card">
+            <img src="../assets/bag.png" alt="bag-icon" />
+            <div>
               <h4 class="account-card__title">Total Orders</h4>
               <p class="account-card__value">47</p>
               <p class="account-card__note">Last order: Oct 28, 2024</p>
             </div>
+          </div>
 
-            <div class="account-card">
+          <div class="account-card">
+            <img src="../assets/heart.png" alt="" />
+            <div>
               <h4 class="account-card__title">Saved Items</h4>
               <p class="account-card__value">12</p>
               <p class="account-card__note">3 back in stock</p>
             </div>
+          </div>
 
-            <div class="account-card">
+          <div class="account-card">
+            <img src="../assets/scale.png" alt="scale-icon" />
+            <div>
               <h4 class="account-card__title">Total Spent</h4>
               <p class="account-card__value">₦18.5M</p>
               <p class="account-card__note">This year</p>
             </div>
+          </div>
 
-            <div class="account-card">
+          <div class="account-card">
+            <img src="../assets/box.png" alt="red-box-icon" />
+            <div>
               <h4 class="account-card__title">Pending Orders</h4>
               <p class="account-card__value">2</p>
               <p class="account-card__note">Awaiting delivery</p>
             </div>
-          </aside>
-        </div>
+          </div>
+        </aside>
       </div>
     </main>
 

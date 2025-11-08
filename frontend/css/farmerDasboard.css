@@ -75,7 +75,7 @@
 .table-container {
     width: 80%;
     margin-inline: auto;
-    background: #E5E7EB;
+    background: #F9F9F9;
     border-radius: 8px;
     overflow-x: auto; /* Makes table scrollable on small screens */
     margin-top: 2.0625em;
@@ -150,7 +150,8 @@ td:has(button) {
 }
 
 .edit-btn,
-.danger-btn {
+.danger-btn,
+.order-action {
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -170,7 +171,7 @@ td:has(button) {
 }
 
 
-@media (max-width:40em) {
+@media (max-width:50em) {
     .dashboard {
         width: 90%;
     }
@@ -237,4 +238,85 @@ td:has(button) {
         width: 100%;
         margin-inline: auto;
     }
+}
+
+/* buyers style */
+.verified {
+    width: 16px;
+    height: auto;
+}
+.buyer--badge {
+    background-color: #ECEEF2;
+    font-weight: 500;
+
+}
+.order-table {
+    background: #F9F9F9;
+    border-radius: 8px;
+    overflow-x: auto; /* Makes table scrollable on small screens */
+    margin-top: 2.0625em;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.order-history {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 2.4625em;
+}
+
+.order-history__header {
+    margin-bottom: 1.5em;
+}
+
+.order-history__title,
+.order-history__subtitle {
+    line-height: 1.5;
+}
+
+.order-status {
+    border-radius: 8px;
+    padding: 0.15em 0.5em;
+}
+
+.order-status--completed {
+    background-color: #030213;
+    color: #FFFFFF;
+}
+
+.order-status--pending {
+    background-color: #D4183D;
+    color: #FFFFFF;
+}
+
+.order-status--cancelled {
+    background-color: #ECEEF2;
+}
+
+.account-overview h2{
+    margin-bottom: 1.6375em;
+}
+
+.account-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1em;
+    background-color: #F9F9F9;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+@media(min-width:60em) {
+    .order-history {
+        width: 80%;
+        display: flex;
+        align-items: baseline;
+        gap: 3em;
+    }
+
+    .order-history__content {
+        width: 80%;
+    }
+
 }
