@@ -127,6 +127,10 @@ tr {
     display: inline-block;
 }
 
+.views-number {
+    margin-top: 2em;
+}
+
 .price {
     color: #2E7D32;
 }
@@ -195,39 +199,42 @@ td:has(button) {
 
 .insight__card {
     background: #e8f0e9;
-    padding: 2em;
+    padding: 1em;
 }
 
 .card-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.insight__card:has([class="views-number"]) .card-header {
+    gap: 8em;
 }
 
 .list-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8em;
+    gap: 6em;
 }
 
-@media (min-width:50em) {
+@media (max-width:50em) {
     .cards {
         width: 90%;
         gap: 2em;
     }
 
     .insight__card {
-        width: 100%;
+        width: 90%;
+        margin-inline: auto;
     }
 }
 
-@media (min-width:60em) {
-    .cards {
-        width: 90%;
-    }
-
+@media (max-width:40em) {
     .insight__card {
-        width: 50%;
+        width: 100%;
+        margin-inline: auto;
     }
 }
