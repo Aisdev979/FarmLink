@@ -23,13 +23,13 @@
 
 .first-button {
     background-color: var(--colorlight-yellow);
+    transition: all 0.2s ease-in-out;
 }
 .first-button:hover {
     background-color: var(--colorlight-yellow-dark);
-}
-.first-button span:hover {
     color: var(--color-background);
 }
+
 .first-button img {
     filter: none;
     transition: filter 0.2s ease-in-out;
@@ -38,20 +38,21 @@
     filter: brightness(0) invert(1);
 }
 /* second-button */
-.second-button span {
+
+.second-button {
+    background-color: var(--white);
     color: var(--color-primary);
+    transition: all 0.5s ease-in-out;
 }
 
 .second-button:hover {
     background-color: rgba(200, 243, 200, 0.808);
-    
-}
-.second-button span:hover {
     color: var(--color-background);
 }
+
 .second-button img {
     filter: none;
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.5s ease-in-out;
 }
 .second-button img:hover {
     filter: brightness(0) invert(1);
