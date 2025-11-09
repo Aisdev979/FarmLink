@@ -6,7 +6,8 @@
 @import url('components/cards.css');
 @import url('components/forms.css');
 @import url('utilities.css');
-@import url('farmerDasboard.css');
+@import url('farmers.css');
+@import url('buyers.css');
 
 body {
     background-color: var(--color-background);

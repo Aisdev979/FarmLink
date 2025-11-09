@@ -98,3 +98,6 @@ categories.addEventListener('change', async (event) => {
 });
 
 marketPlaceBtn.addEventListener('click', init);
+
+
+export default init;
