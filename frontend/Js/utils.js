@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("navigationBtn");
   const getstarted = document.getElementById("get-started");
   const buyer = document.getElementById("BuyerBtn");
+  const getstartedmobile = document.getElementById('getstarted-mobile');
 
   if (button) button.addEventListener("click", () => window.location.href = "athu/farmersRegistration.html");
   if (getstarted) getstarted.addEventListener("click", () => window.location.href = "athu/farmersRegistration.html");
   if (buyer) buyer.addEventListener("click", () => window.location.href = "athu/buyersResgistration.html");
+  if (getstartedmobile) getstartedmobile.addEventListener("click", () => window.location.href = "athu/buyersResgistration.html");
 });
 
 // ==========================

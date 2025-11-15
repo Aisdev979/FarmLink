@@ -91,7 +91,7 @@
 }
 
 .login-container #get-started,
-.mobile-login #get-started {
+.mobile-login #getstarted-mobile {
     
     padding: 1em 2em;
     border-radius: var( --radius-xs);
@@ -112,7 +112,7 @@
     background-color: var(--color-primary-hover);
    
 }
-.mobile-login #get-started:hover {
+.mobile-login #getstarted-mobile:hover {
     background-color: var(--color-primary-hover);
 }
 
@@ -821,6 +821,7 @@
         
         margin: 1.5rem auto;
         width: 100%;
+        padding-top: 5rem;
     }
     .hero-container {
        
