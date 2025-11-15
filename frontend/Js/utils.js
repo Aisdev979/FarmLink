@@ -170,3 +170,15 @@ const fbBtn = document.querySelector("#facebookSignIn");
 const googleBtn = document.querySelector("#googleSignIn");
 if (fbBtn) fbBtn.addEventListener("click", handleFBLogin);
 if (googleBtn) googleBtn.addEventListener("click", handleGoogleLogin);
+
+
+
+  
+
+const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    nav.classList.toggle("open");
+  })

@@ -57,3 +57,14 @@
 }
 
 
+@media (max-width: 600px) {
+    .Register {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Register-btn {
+        width: 95%;
+    }
+}
+
